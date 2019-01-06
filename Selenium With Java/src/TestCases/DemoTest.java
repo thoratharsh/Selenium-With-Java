@@ -1,10 +1,18 @@
 package TestCases;
 
-public class DemoTest {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
-		System.out.println("this is my first test");
-		
+import Utilities.CommonFunctions;
+
+public class DemoTest {
 	
+	@Test
+	public void my_First_Test_Case() throws InterruptedException {
+		CommonFunctions action = new CommonFunctions();
+		action.open_Application("chrome", "http://www.google.com");
+		Thread.sleep(4000);
+		action.close_Browser();	
 	}
 }
