@@ -1,4 +1,4 @@
-package Utilities;
+package com.test.Utilities;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,16 +14,22 @@ public class CommonFunctions {
 	public void open_Application(String BrowserName, String url) {
 		switch (BrowserName) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "C:\\Chromedriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", Config.CHROMEDRIVER_PATH);
 			this.driver = new ChromeDriver();
 			break;
 
 		case "firefox":
+			System.setProperty("webdriver.gecko.driver", Config.FIREFOXDRIVER_PATH);
 			this.driver = new FirefoxDriver();
 			break;
 
 		case "ie":
-			System.setProperty("webdriver.ie.driver", "C:\\");
+			System.setProperty("webdriver.ie.driver", Config.IEDRIVER_PATH);
+			this.driver = new InternetExplorerDriver();
+			break;
+			
+		case "opera":
+			System.setProperty("webdriver.opera.driver", Config.OPERADRIVER_PATH);
 			this.driver = new InternetExplorerDriver();
 			break;
 
