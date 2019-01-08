@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18290" started-at="2019-01-08T16:52:14Z" finished-at="2019-01-08T16:52:33Z">
+  <suite name="Suite" duration-ms="24980" started-at="2019-01-08T20:18:05Z" finished-at="2019-01-08T20:18:30Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18290" started-at="2019-01-08T16:52:14Z" finished-at="2019-01-08T16:52:33Z">
+    <test name="Test" duration-ms="24980" started-at="2019-01-08T20:18:05Z" finished-at="2019-01-08T20:18:30Z">
       <class name="com.test.TestCases.DemoTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestCases.DemoTest@55f3ddb1]" name="setup" is-config="true" duration-ms="10145" started-at="2019-01-08T16:52:14Z" finished-at="2019-01-08T16:52:24Z">
+        <test-method status="PASS" signature="setup_before_suite()[pri:0, instance:com.test.TestCases.DemoTest@4501b7af]" name="setup_before_suite" is-config="true" duration-ms="135" started-at="2019-01-08T20:18:05Z" finished-at="2019-01-08T20:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_before_suite -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestCases.DemoTest@4501b7af]" name="setup" is-config="true" duration-ms="9181" started-at="2019-01-08T20:18:06Z" finished-at="2019-01-08T20:18:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="my_First_Test_Case()[pri:0, instance:com.test.TestCases.DemoTest@55f3ddb1]" name="my_First_Test_Case" duration-ms="7358" started-at="2019-01-08T16:52:24Z" finished-at="2019-01-08T16:52:32Z">
+        <test-method status="PASS" signature="Login_to_Organge_HRM()[pri:0, instance:com.test.TestCases.DemoTest@4501b7af]" name="Login_to_Organge_HRM" duration-ms="2570" started-at="2019-01-08T20:18:15Z" finished-at="2019-01-08T20:18:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- my_First_Test_Case -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestCases.DemoTest@55f3ddb1]" name="teardown" is-config="true" duration-ms="754" started-at="2019-01-08T16:52:32Z" finished-at="2019-01-08T16:52:33Z">
+        </test-method> <!-- Login_to_Organge_HRM -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestCases.DemoTest@4501b7af]" name="teardown" is-config="true" duration-ms="777" started-at="2019-01-08T20:18:17Z" finished-at="2019-01-08T20:18:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestCases.DemoTest@4501b7af]" name="setup" is-config="true" duration-ms="8293" started-at="2019-01-08T20:18:18Z" finished-at="2019-01-08T20:18:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Login_to_Organge_HRM2()[pri:0, instance:com.test.TestCases.DemoTest@4501b7af]" name="Login_to_Organge_HRM2" duration-ms="2981" started-at="2019-01-08T20:18:26Z" finished-at="2019-01-08T20:18:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_to_Organge_HRM2 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestCases.DemoTest@4501b7af]" name="teardown" is-config="true" duration-ms="744" started-at="2019-01-08T20:18:29Z" finished-at="2019-01-08T20:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown_after_suite()[pri:0, instance:com.test.TestCases.DemoTest@4501b7af]" name="teardown_after_suite" is-config="true" duration-ms="274" started-at="2019-01-08T20:18:30Z" finished-at="2019-01-08T20:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown_after_suite -->
       </class> <!-- com.test.TestCases.DemoTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
