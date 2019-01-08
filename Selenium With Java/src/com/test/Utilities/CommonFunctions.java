@@ -13,7 +13,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class CommonFunctions {
+	ExtentTest test=null;
+	public CommonFunctions(ExtentTest test) {
+		this.test= test;
+	}
+	
 	public WebDriver open_Application(String BrowserName, String url) {
 		WebDriver driver=null;
 		switch (BrowserName) {
@@ -49,17 +56,29 @@ public class CommonFunctions {
 		return driver;
 	}
 
-	public void input_Text(WebDriver driver,String xpath, String text) {
-		driver.findElement(By.xpath(xpath)).clear();
-		driver.findElement(By.xpath(xpath)).sendKeys(text);
+	public void input_Text(WebDriver driver,String xpath, String text,String field_name) {
+		try {
+			driver.findElement(By.xpath(xpath)).clear();
+			driver.findElement(By.xpath(xpath)).sendKeys(text);
+			Extent_Report.pass_test(test, text+" entered in "+field_name);
+		} catch (Exception e) {
+			Extent_Report.fail_test(test, "Error while entering text in "+field_name);
+			e.printStackTrace();
+		}
 	}
 
 	public void clear_Text(WebDriver driver,String xpath) {
 		driver.findElement(By.xpath(xpath)).clear();
 	}
 
-	public void click_Element(WebDriver driver,String xpath) {
-		driver.findElement(By.xpath(xpath)).click();
+	public void click_Element(WebDriver driver,String xpath,String field_name) {
+		try {
+			driver.findElement(By.xpath(xpath)).click();
+			Extent_Report.pass_test(test, "Clicked on "+field_name);
+		} catch (Exception e) {
+			Extent_Report.fail_test(test, "Error while clicking on "+field_name);
+			e.printStackTrace();
+		}
 	}
 
 	public void wait_until_Element_is_Visible(WebDriver driver,String xpath, int wait_time) {
