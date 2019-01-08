@@ -2,7 +2,7 @@ package com.test.Utilities;
 
 public class Config {
 
-	public static String URL = "http://www.google.com";
+	public static String URL = "https://opensource-demo.orangehrmlive.com/";
 	public static String DRIVER_PATH = "C:\\SeleniumDrivers";
 
 	public static String CHROMEDRIVER_PATH = DRIVER_PATH + "\\chromedriver.exe";

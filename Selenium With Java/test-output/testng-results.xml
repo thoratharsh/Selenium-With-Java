@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27059" started-at="2019-01-06T16:10:57Z" finished-at="2019-01-06T16:11:24Z">
+  <suite name="Suite" duration-ms="18290" started-at="2019-01-08T16:52:14Z" finished-at="2019-01-08T16:52:33Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="27059" started-at="2019-01-06T16:10:57Z" finished-at="2019-01-06T16:11:24Z">
+    <test name="Test" duration-ms="18290" started-at="2019-01-08T16:52:14Z" finished-at="2019-01-08T16:52:33Z">
       <class name="com.test.TestCases.DemoTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestCases.DemoTest@39aeed2f]" name="setup" is-config="true" duration-ms="7" started-at="2019-01-06T16:10:57Z" finished-at="2019-01-06T16:10:57Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestCases.DemoTest@55f3ddb1]" name="setup" is-config="true" duration-ms="10145" started-at="2019-01-08T16:52:14Z" finished-at="2019-01-08T16:52:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="my_First_Test_Case()[pri:0, instance:com.test.TestCases.DemoTest@39aeed2f]" name="my_First_Test_Case" duration-ms="10906" started-at="2019-01-06T16:10:57Z" finished-at="2019-01-06T16:11:08Z">
+        <test-method status="PASS" signature="my_First_Test_Case()[pri:0, instance:com.test.TestCases.DemoTest@55f3ddb1]" name="my_First_Test_Case" duration-ms="7358" started-at="2019-01-08T16:52:24Z" finished-at="2019-01-08T16:52:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- my_First_Test_Case -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestCases.DemoTest@39aeed2f]" name="teardown" is-config="true" duration-ms="2906" started-at="2019-01-06T16:11:08Z" finished-at="2019-01-06T16:11:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestCases.DemoTest@39aeed2f]" name="setup" is-config="true" duration-ms="1" started-at="2019-01-06T16:11:11Z" finished-at="2019-01-06T16:11:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="my_Second_Test_Case()[pri:0, instance:com.test.TestCases.DemoTest@39aeed2f]" name="my_Second_Test_Case" duration-ms="10306" started-at="2019-01-06T16:11:11Z" finished-at="2019-01-06T16:11:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- my_Second_Test_Case -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestCases.DemoTest@39aeed2f]" name="teardown" is-config="true" duration-ms="2899" started-at="2019-01-06T16:11:21Z" finished-at="2019-01-06T16:11:24Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestCases.DemoTest@55f3ddb1]" name="teardown" is-config="true" duration-ms="754" started-at="2019-01-08T16:52:32Z" finished-at="2019-01-08T16:52:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
