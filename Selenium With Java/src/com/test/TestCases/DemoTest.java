@@ -33,6 +33,7 @@ public class DemoTest {
 		ExtentTest test = Extent_Report.start_test("TC001_Verify user can login to Organge HRM");
 		Login login = new Login(driver, test);
 		login.login_to_Orange_hrm("Admin", "admin123");
+		
 		Extent_Report.end_test(test);
 	}
 
